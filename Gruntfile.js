@@ -309,6 +309,36 @@ module.exports = function (grunt) {
         }
       }
     },
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: /("|'?)\/?styles\//g,
+              replacement: '$1http://traviskroberts.github.io/travisroberts.me/styles/'
+            },
+            {
+              match: /("|'?)\/?scripts\//g,
+              replacement: '$1http://traviskroberts.github.io/travisroberts.me/scripts/'
+            },
+            {
+              match: /(<a[^>]*href="?)(\/)/g,
+              replacement: '$1http://traviskroberts.github.io/travisroberts.me/'
+            },
+            {
+              match: /(<form[^>]*action="?)(\/)/g,
+              replacement: '$1http://traviskroberts.github.io/travisroberts.me/'
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            src: ['dist/**/*.html', 'dist/scripts/*.js']
+          }
+        ]
+      }
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc'
