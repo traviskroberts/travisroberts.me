@@ -1,5 +1,5 @@
 html {
-  background: url("/images/background.jpg") no-repeat center center fixed;
+  background: url("../images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,27 +80,27 @@ body {
     font-size: 0;
 
     &.icon-github {
-      background: url("/images/icon_github.png") no-repeat 0 0;
+      background: url("../images/icon_github.png") no-repeat 0 0;
     }
 
     &.icon-instagram {
-      background: url("/images/icon_instagram.png") no-repeat 0 0;
+      background: url("../images/icon_instagram.png") no-repeat 0 0;
     }
 
     &.icon-twitter {
-      background: url("/images/icon_twitter.png") no-repeat 0 0;
+      background: url("../images/icon_twitter.png") no-repeat 0 0;
     }
 
     &.icon-rdio {
-      background: url("/images/icon_rdio.png") no-repeat 0 0;
+      background: url("../images/icon_rdio.png") no-repeat 0 0;
     }
 
     &.icon-linkedin {
-      background: url("/images/icon_linkedin.png") no-repeat 0 0;
+      background: url("../images/icon_linkedin.png") no-repeat 0 0;
     }
 
     &.icon-email {
-      background: url("/images/icon_email.png") no-repeat 0 0;
+      background: url("../images/icon_email.png") no-repeat 0 0;
     }
 
     a {
