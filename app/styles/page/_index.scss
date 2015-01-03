@@ -78,6 +78,7 @@ body {
   li {
     display: inline-block;
     font-size: 0;
+    margin-right: .5em;
 
     &.icon-github {
       background: url("../images/icon_github.png") no-repeat 0 0;
